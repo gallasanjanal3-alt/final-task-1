@@ -5,53 +5,125 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <center><img src="image decore of final task 1.jpg" alt="Tomato Soup" width="200" height="200"></center>
   <title>Delicious Bites - Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background: #8B0000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    h2 {
+      border-bottom: 2px solid #8B0000;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
+    .menu-section {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    li img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 15px;
+    }
+    .dish-info {
+      flex: 1;
+    }
+    .dish-name {
+      font-weight: bold;
+      font-size: 18px;
+      margin: 0;
+    }
+    .price {
+      color: green;
+      font-weight: bold;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
 
   <header>
     <h1>🍴 Delicious Bites</h1>
-    <nav>
-      <a href="#">Home</a> | 
-      <a href="#">Menu</a> | 
-      <a href="#">About</a> | 
-      <a href="#">Contact</a>
-    </nav>
+    <p>Welcome to our restaurant!</p>
   </header>
 
-  <main>
+  <section class="menu-section">
     <h2>Starters</h2>
     <ul>
-      <li>Tomato Soup — ₹120</li>
-      <li>Spring Rolls — ₹150</li>
-      <li>Garlic Bread — ₹80</li>
+      <li>
+        <img src="" alt="Tomato Soup">
+        <div class="dish-info">
+          <p class="dish-name">Tomato Soup</p>
+          <p class="price">₹120</p>
+        </div>
+      </li>
+      <li>
+        <img src="springrolls.jpg" alt="Spring Rolls">
+        <div class="dish-info">
+          <p class="dish-name">Spring Rolls</p>
+          <p class="price">₹150</p>
+        </div>
+      </li>
+      <li>
+        <img src="garlicbread.jpg" alt="Garlic Bread">
+        <div class="dish-info">
+          <p class="dish-name">Garlic Bread</p>
+          <p class="price">₹80</p>
+        </div>
+      </li>
     </ul>
 
     <h2>Main Course</h2>
     <ul>
-      <li>Paneer Butter Masala with Naan — ₹250</li>
-      <li>Chicken Biryani — ₹300</li>
-      <li>Veg Fried Rice — ₹200</li>
+      <li>
+        <img src="paneer.jpg" alt="Paneer Butter Masala">
+        <div class="dish-info">
+          <p class="dish-name">Paneer Butter Masala with Naan</p>
+          <p class="price">₹250</p>
+        </div>
+      </li>
+      <li>
+        <img src="biryani.jpg" alt="Chicken Biryani">
+        <div class="dish-info">
+          <p class="dish-name">Chicken Biryani</p>
+          <p class="price">₹300</p>
+        </div>
+      </li>
     </ul>
-
-    <h2>Desserts</h2>
-    <ul>
-      <li>Chocolate Brownie — ₹100</li>
-      <li>Gulab Jamun — ₹80</li>
-      <li>Ice Cream (2 scoops) — ₹120</li>
-    </ul>
-
-    <h2>Beverages</h2>
-    <ul>
-      <li>Cold Coffee — ₹90</li>
-      <li>Lemon Soda — ₹60</li>
-      <li>Masala Chai — ₹40</li>
-    </ul>
-  </main>
+  </section>
 
   <footer>
-    <p>📍 Location: 123 Food Street, Hyderabad</p>
+    <p>📍 Location: 123 Food Street, Hyderabad | 📞 +91 98765 43210</p>
     <p>⏰ Open: 10 AM – 11 PM</p>
-    <p>📞 Call: +91 98765 43210</p>
   </footer>
 
 </body>
